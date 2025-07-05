@@ -15,12 +15,14 @@ footer
 .links{
     list-style-type: none;
     margin-left: auto;
+    width: 30%;
+    justify-content: space-between;
 }
 
 .header02 {
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 300px;
     align-content: space-between;
 }
@@ -32,8 +34,9 @@ img {
 .fds,
 .text1{
     flex-grow: 1;
-    flex-shrink: 0;
-    max-width: 50%;
+    flex-shrink: 1;
+    max-width: 60%;
+    max-height: fit-content;
 }
 .fds{
     font-size: 48px;
@@ -41,14 +44,27 @@ img {
     font-weight: 900;
 }
 .text1,
-.links {
+.links,
+button {
     font-size: 18px;
     color: #e5e7eb;
-}
-.body1{
-    display:flex
 }
 strong {
     font-size: 24px;
     color:#f9faf8
+}
+button {
+    background-color: #3882f6;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15%;
+}
+.Services {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    justify-self: center;
+}
+.body1 {
+    display: flex;
 }
